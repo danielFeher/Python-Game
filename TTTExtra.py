@@ -42,7 +42,7 @@ def choose_letter(board_as_list):
         print("Select a valid number between 1-" + str(max_size-1))
         try:
             position = int(input())
-        except:
+        except ValueError:
             pass
     if len(str(position)) == 1:
         position = " " + str(position) + " "
